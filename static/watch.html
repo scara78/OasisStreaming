@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebOasis Movies</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/stylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/info.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+	</head>
+	<body>
+		<img src="{{ url_for('static',filename='assets/logo.png') }}" class="logo">
+		<div class="navbar">
+			<a href="/">Search</a>
+			<a href="/faq">FAQ</a>
+			<a href="/privacy">Privacy Policy</a>
+		</div>
+		<div class="content">
+			<div class="title">{{ moviedata["title"] }} - {{ moviedata["year"] }}</div>
+			<div class="panelbody" style="">
+				<video id="movie" width="100%" controls="true"></video>
+				<ul>
+					<li>Released: {{ moviedata["released"] }}</li>
+					<li>Download: <a href="/download/{{ moviedata['slug'] }}" target="_blank" style="text-decoration: none; color: #0066A5">here</a> (Not ready yet)</li>
+					<li>Description:</li>
+					<ul>
+						<li>{{ moviedata["desc"] }}</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<script src="{{ url_for('static',filename='lib/hls.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/watch.js') }}"></script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebOasis Movies</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/stylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/info.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/search.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+	</head>
+	<body>
+		<img src="{{ url_for('static',filename='assets/logo.png') }}" class="logo">
+		<div class="navbar">
+			<a class="active" href="/">Search</a>
+			<a href="/faq">FAQ</a>
+			<a href="/privacy">Privacy Policy</a>
+		</div>
+		<div class="content">
+			<div class="title">Search Movies</div>
+			<div class="panelbody" style="display:flex;justify-content:center;align-items:center">
+				<input type="text" class="search" id="search" placeholder="Search Movies...">
+				<button class="searchbtn" id="searchbtn">Search</button>
+			</div>
+		</div>
+		<script src="{{ url_for('static',filename='js/search.js') }}"></script>
+	</body>
+</html>

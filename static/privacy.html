@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebOasis Movies</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/stylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/info.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+	</head>
+	<body>
+		<img src="{{ url_for('static',filename='assets/logo.png') }}" class="logo">
+		<div class="navbar">
+			<a href="/">Search</a>
+			<a href="/faq">FAQ</a>
+			<a class="active" href="/privacy">Privacy Policy</a>
+		</div>
+		<div class="content">
+			<div class="title">Privacy Policy</div>
+			<div class="panelbody">
+				<ul>
+					<li>All logs are deleted after 24 hours.</li>
+					<li>We do <b>not</b> record or keep track of anything. We serve no ads, we have no tracking scripts, we have no analytics software.</li>
+					<li>Any cookies we store in your browser is to keep you logged into your account. It has nothing to do with tracking.</li>
+					<li>The site is primarily made from just HTML, CSS, and JavaScript. We only store data that is absolutely crucial for site function.</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

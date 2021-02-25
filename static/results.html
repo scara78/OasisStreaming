@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebOasis Movies</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/stylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/info.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/results.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+	</head>
+	<body>
+		<img src="{{ url_for('static',filename='assets/logo.png') }}" class="logo">
+		<div class="navbar">
+			<a class="active" href="/">Search</a>
+			<a href="/faq">FAQ</a>
+			<a href="/privacy">Privacy Policy</a>
+		</div>
+		<div class="content">
+			<div class="title">Search Results for "{{ query }}"</div>
+			<div class="panelbody">
+				<table>
+					<tr>
+						<th>Thumbnail</th>
+						<th>Title</th>
+						<th>Released</th>
+						<th>Link</th>
+					</tr>
+					{% for result in results %}
+						<tr>
+							<td><img src="https://lookmovie.io{{ result['poster'] }}"></td>
+							<td>{{ result["title"] }}</td>
+							<td>{{ result["release_date"] }}</td>
+							<td>Watch <a target="_blank" href="/watch/{{ result['slug'] }}" style="text-decoration: none; color: #0066A5">here</a></td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

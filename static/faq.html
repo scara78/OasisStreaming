@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebOasis Movies</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/stylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/info.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+	</head>
+	<body>
+		<img src="{{ url_for('static',filename='assets/logo.png') }}" class="logo">
+		<div class="navbar">
+			<a href="/">Search</a>
+			<a class="active" href="/faq">FAQ</a>
+			<a href="/privacy">Privacy Policy</a>
+		</div>
+		<div class="content">
+			<div class="title">Frequently Asked Questions</div>
+			<div class="panelbody">
+				<ul>
+					<li>What is this site?</li>
+					<ul>
+						<li>WebOasis's offical movie streaming service. Click <a href="https://weboas.is/" style="text-decoration: none; color: #0066A5">here</a> to get to the main site.</li>
+					</ul><br>
+					<li>Is this DMCA compliant?</li>
+					<ul>
+						<li>Fuck no B)</li>
+					</ul><br>
+					<li>Is the source code for this project public?</li>
+					<ul>
+						<li><a target="_blank" href="https://github.com/FreetheDreadPirate/OasisStreaming" style="text-decoration: none; color: #0066A5">Yes</a></li>
+					</ul><br>
+					<li>How does the site work?</li>
+					<ul>
+						<li>We're just leeching off of <a target="_blank" href="https://lookmovie.io/" style="text-decoration: none; color: #0066A5">lookmovie.io</a> (don't tell anyone).</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
