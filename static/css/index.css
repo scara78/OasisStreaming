@@ -1,0 +1,52 @@
+.upload{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #252525;
+	padding: 15px 100px;
+	border: 1px solid;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.uploadicon{
+	width: 10rem;
+}
+
+.uplabel{
+	color: white;
+	text-align: center;
+}
+
+.passform{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.password{
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid;
+	background-color: #282828;
+	color: white;
+	border-color: black;
+	margin-right: 5px;
+}
+
+.uploadbtn{
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid;
+	background-color: #0066A5;
+	color: white;
+	border: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+}

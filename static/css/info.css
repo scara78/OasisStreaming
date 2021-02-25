@@ -1,0 +1,17 @@
+.content{
+	border-radius: 5px;
+	border: 1px solid;
+	color: white;
+	border-color: black;
+}
+
+.title{
+	background-color: #0066A5;
+	padding: 13px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.panelbody{
+	padding: 13px;
+}
